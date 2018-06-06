@@ -22,6 +22,12 @@
 							</VBox>
 						</VBox>
 					</VBox>
+					<HBox>
+				    <Label text="Customers:"/>
+				    <Select items="{Northwind>/Customers}">
+				    	<coretest:ListItem key="{Northwind>CustomerID}" text="{Northwind>CompanyName}"/>
+				    </Select>
+					</HBox>
 				</content>
 			</Page>
 		</pages>
