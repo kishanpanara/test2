@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta charset="UTF-8">
+	<title>HelloWorld</title>
+	<script data-sap-ui-compatversion="edge" data-sap-ui-libs="sap.m" data-sap-ui-resourceroots='{"com.total.demoHelloWorld": ""}' data-sap-ui-theme="sap_bluecrystal" id="sap-ui-bootstrap" src="../../resources/sap-ui-core.js">
+	</script>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script>
+	           sap.ui.getCore().attachInit(function() {
+	               new sap.m.Shell({
+	                   app: new sap.ui.core.ComponentContainer({
+	                       height : "100%",
+	                       name : "com.total.demoHelloWorld"
+	                   })
+	               }).placeAt("content");
+	           });
+	</script>
+</head>
+<body class="sapUiBody" id="content">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<mvc:View xmlns:coretest="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.total.demoHelloWorld.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Details">
+				<content>
+					<VBox>
+						<Input id="idInput" value="{/InputValue}" width="4rem"/>
+						<Input id="idInput1" value="{/InputValue1}" width="4rem"/>
+						<ComboBox items="{Northwind>/Categories}" showSecondaryValues="true" selectedKey="{/SelectedKey}">
+							<coretest:ListItem text="{Northwind>CategoryName}" key="{Northwind>CategoryID}" additionalText="{Northwind>Description}"/>
+						</ComboBox>
+						<Button text="GetInfo" press="onGetInfo"/>
+						<VBox items="{Northwind>/Categories}">
+							<VBox>
+							<Text text="{Northwind>CategoryName}"/>
+							<HBox>
+								<Text text="{Northwind>CategoryName}"/>
+								<Text text="{Northwind>CategoryID}"/>
+								<Text text="{Northwind>Description}"/>
+							</HBox>
+							</VBox>
+						</VBox>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

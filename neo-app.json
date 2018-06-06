@@ -1,0 +1,41 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/Northwind",
+      "target": {
+        "type": "destination",
+        "name": "Northwind"
+      },
+      "description": "Northwind oData Services"
+    },
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "SAP_Gateway",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "SAP Gateway ES5"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}
